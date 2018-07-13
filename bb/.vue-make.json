@@ -1,0 +1,29 @@
+{
+  "styleType": "css",
+  "page": {
+    "directory": "./src/pages",
+    "targetDirectoryPrefix": "",
+    "stylePrefix": "",
+    "layout": false
+  },
+  "view": {
+    "directory": "./src/views",
+    "targetDirectoryPrefix": "",
+    "stylePrefix": "",
+    "layout": false
+  },
+  "component": {
+    "directory": "./src/components",
+    "targetDirectoryPrefix": "",
+    "stylePrefix": ""
+  },
+  "directive": {
+    "directory": "./src/directives"
+  },
+  "mixin": {
+    "directory": "./src/mixins"
+  },
+  "store": {
+    "directory": "./src/store"
+  }
+}

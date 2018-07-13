@@ -1,0 +1,173 @@
+.draggable {
+    /* width:150px;
+    height:150px; */
+    /* padding:0.5em;
+	border:1px solid; */
+	display: inline-block;
+}
+
+.spring,.summer,.autumn,.winter{
+	display: inline-block;
+	width:133px;
+	height:112px;
+	padding:0.5em;
+	border:solid 2px #21a1e1;
+	flex:1;
+}
+
+.player_list,.member_list{
+	/* width:200px;
+	height:400px; */
+	padding:0.5em;
+	border:solid 2px #21a1e1;
+	/* display:inline-block; */
+}
+
+body {
+	padding: 100px;
+	-webkit-font-smoothing: antialiased;
+}
+  
+input {
+	background: none;
+	color: #21a1e1;
+	padding: 15px 40px;
+	font-size: 18px;
+	display: inline-block;
+}
+#compute p {
+	background: none;
+	color: #21a1e1;
+	padding: 15px 40px;
+	font-size: 18px;
+	display: inline-block;
+}
+#meijuanpai p{
+	color: #21a1e1;
+	padding: 15px 40px;
+	font-size: 15px;
+	display: block;
+}
+#meijuanpai {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#meijuanpai td, #meijuanpai th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#meijuanpai tr:nth-child(even){background-color: #f2f2f2;}
+
+#meijuanpai tr:hover {background-color: #ddd;}
+
+#meijuanpai th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #21a1e1;
+    color: white;
+}
+
+input:focus, input:active {
+	outline: none;
+}
+
+input[type="text"], input[type="email"] {
+	border: none;
+	border-bottom: solid 2px #21a1e1;
+}
+
+input[type="submit"]:active {
+	color: white;
+	background: #21a1e1;
+}
+
+.input-group {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+}
+
+.input-group input {
+	padding: 15px 0px;
+}
+
+.input-group label {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+	font-style: italic;
+	font-size: 18px;
+	color: #999;
+	pointer-events: none;
+	transition: all 0.15s ease-out 0s;
+}
+.input-group input:focus + label,
+.input-group input.has-value + label {
+	top: -10px;
+	font-size: 12px;
+	color: #aaa;
+}
+  
+
+
+.paper_medal {
+    background-color: #E6E6FA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.gold_medal {
+    background-color: #FFD700; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.silver_medal {
+    background-color: #C0C0C0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.bronze_medal {
+    background-color: #FF8000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.iron_medal {
+    background-color: #6C6C6C; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
