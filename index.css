@@ -32,14 +32,14 @@ input {
 	background: none;
 	color: #21a1e1;
 	padding: 15px 40px;
-	font-size: 18px;
+	font-size: 9px;
 	display: inline-block;
 }
 #compute p {
 	background: none;
 	color: #21a1e1;
-	padding: 15px 40px;
-	font-size: 18px;
+	/* padding: 15px 40px; */
+	font-size: 15px;
 	display: inline-block;
 }
 #meijuanpai p{
@@ -103,7 +103,7 @@ input[type="submit"]:active {
 	transform: translateY(-50%);
 	font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 16px;
 	color: #999;
 	pointer-events: none;
 	transition: all 0.15s ease-out 0s;
@@ -121,7 +121,7 @@ input[type="submit"]:active {
     background-color: #E6E6FA; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -132,7 +132,7 @@ input[type="submit"]:active {
     background-color: #FFD700; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -143,7 +143,7 @@ input[type="submit"]:active {
     background-color: #C0C0C0; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -154,7 +154,7 @@ input[type="submit"]:active {
     background-color: #FF8000; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -165,7 +165,7 @@ input[type="submit"]:active {
     background-color: #6C6C6C; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
