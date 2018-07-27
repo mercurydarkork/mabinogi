@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./knight.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="./knight.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <table id="knife">
+        <tr>
+            <th>1组</th>
+            <th>Name</th>
+            <th>职责</th>
+            <th>2组</th>
+            <th>Name</th>
+            <th>职责</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td  ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Judgment_Blade.png"></td>
+            <td>9</td>
+            <td  ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Shield_of_Trust.png">（保护1，2）</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Judgment_Blade.png"></td>
+            <td>10</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Shield_of_Trust.png">（保护3，4）</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Judgment_Blade.png"></td>
+            <td>11</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Shield_of_Trust.png">（保护5，6）</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Judgment_Blade.png"></td>
+            <td>12</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>13</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>14</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>15</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>16</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>3组</th>
+            <th>Name</th>
+            <th>职责</th>
+            <th>4组</th>
+            <th>Name</th>
+            <th>职责</th>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Celestial_Spike.png"><img src="./img/Support_Shot.png"></td>
+            <td>25</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Shield_of_Trust.png">（保护17，18）</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Celestial_Spike.png"><img src="./img/Support_Shot.png"></td>
+            <td>26</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Shield_of_Trust.png">（保护19，20）</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td><img src="./img/Playing_Instrument.png"></td>
+            <td>27</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td>拉使徒</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>28</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>29</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>30</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>31</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+            <td>32</td>
+            <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="player_list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <a id="1" class="player" draggable="true" ondragstart="drag(event)">大囧</a>
+        <a id="2" class="player" draggable="true" ondragstart="drag(event)">当当</a>
+        <a id="3" class="player" draggable="true" ondragstart="drag(event)">娱乐</a>
+        <a id="4" class="player" draggable="true" ondragstart="drag(event)">麦当劳</a>
+        <a id="5" class="player" draggable="true" ondragstart="drag(event)">白兔</a>
+        <a id="6" class="player" draggable="true" ondragstart="drag(event)">剑影</a>
+        <a id="7" class="player" draggable="true" ondragstart="drag(event)">菜菜</a>
+        <a id="8" class="player" draggable="true" ondragstart="drag(event)">栗子</a>
+        <a id="9" class="player" draggable="true" ondragstart="drag(event)">孔索</a>
+        <a id="10" class="player" draggable="true" ondragstart="drag(event)">熙宝</a>
+        <a id="11" class="player" draggable="true" ondragstart="drag(event)">风自在飞</a>
+        <a id="12" class="player" draggable="true" ondragstart="drag(event)">撒切尔</a>
+        <a id="13" class="player" draggable="true" ondragstart="drag(event)">妙妙</a>
+        <a id="14" class="player" draggable="true" ondragstart="drag(event)">qdishi</a>
+        <a id="15" class="player" draggable="true" ondragstart="drag(event)">xxc4</a>
+        <a id="16" class="player" draggable="true" ondragstart="drag(event)">easydou</a>
+        <a id="17" class="player" draggable="true" ondragstart="drag(event)">7N</a>
+        <a id="18" class="player" draggable="true" ondragstart="drag(event)">刑天</a>
+    </div>
+</body>
+</html>

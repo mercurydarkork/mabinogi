@@ -18,6 +18,7 @@ $(function() {
     }
   });
 
+  setInterval(function(){saveData();},5000);
 });
 var api1 = "http://localhost:3216/training_grounds/team"
 var a 
@@ -82,6 +83,73 @@ function dropCopy(ev){
   var item = document.getElementById(data).cloneNode(true);
   item.id=item.id+"copy"
   ev.target.appendChild(item);
+}
+
+function saveData(){
+  var spring_medal1 = $('#spring a:eq(0)').attr("class")
+  var spring_medal2 = $('#spring a:eq(1)').attr("class")
+  var summer_medal1 = $('#summer a:eq(0)').attr("class")
+  var summer_medal2 = $('#summer a:eq(1)').attr("class")
+  var autumn_medal1 = $('#autumn a:eq(0)').attr("class")
+  var autumn_medal2 = $('#autumn a:eq(1)').attr("class")
+  var winter_medal1 = $('#winter a:eq(0)').attr("class")
+  var winter_medal2 = $('#winter a:eq(1)').attr("class")
+
+  var team = {
+    "spring":[
+      {
+        "name":$('#spring a:eq(0)').text(),
+        "medal":spring_medal1 === undefined ? null : spring_medal1.slice(0,-6)
+      },
+      {
+        "name":$('#spring a:eq(1)').text(),
+        "medal":spring_medal2 === undefined ? null : spring_medal2.slice(0,-6)
+      }
+    ],
+    "summer":[
+      {
+        "name":$('#summer a:eq(0)').text(),
+        "medal":summer_medal1 === undefined ? null : summer_medal1.slice(0,-6)
+      },
+      {
+        "name":$('#summer a:eq(1)').text(),
+        "medal":summer_medal2 === undefined ? null : summer_medal2.slice(0,-6)
+      }
+    ],
+    "autumn":[
+      {
+        "name":$('#autumn a:eq(0)').text(),
+        "medal":autumn_medal1 === undefined ? null : autumn_medal1.slice(0,-6)
+      },
+      {
+        "name":$('#autumn a:eq(1)').text(),
+        "medal":autumn_medal2 === undefined ? null : autumn_medal2.slice(0,-6)
+      }
+    ],
+    "winter":[
+      {
+        "name":$('#winter a:eq(0)').text(),
+        "medal":winter_medal1 === undefined ? null : winter_medal1.slice(0,-6)
+      },
+      {
+        "name":$('#winter a:eq(1)').text(),
+        "medal":winter_medal2 === undefined ? null : winter_medal2.slice(0,-6)
+      }
+    ]
+  }
+$.ajax({
+    type: "POST",
+    url: api1,
+    // The key needs to match your method's input parameter (case-sensitive).
+    data: JSON.stringify(team),
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function(data){alert(data);},
+    failure: function(errMsg) {
+        alert(errMsg);
+    }
+});
+
 }
 
 

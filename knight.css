@@ -1,0 +1,48 @@
+body {
+    background-color: #212121
+}
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    flex:1;
+}
+
+table td, table th {
+    border: 1px solid #303030;
+    padding: 4px;
+}
+
+table tr{
+    background-color: #212121;
+    color: #2196f3
+}
+
+table tr:hover {background-color: #303030;}
+
+table th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+    background-color: #2196f3;
+    color: white;
+}
+
+.player {
+    background-color: #2196f3; /* Green */
+    border: none;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.player_list {
+	/* width:200px;
+	height:400px; */
+	padding:0.5em;
+	border:solid 2px #2196f3;
+	/* display:inline-block; */
+}
