@@ -38,6 +38,7 @@
 
 #group {
     display: flex;
+    box-shadow: 1px 1px 10px 5px #888888;
 }
 
 body {
@@ -49,8 +50,8 @@ body {
 input {
 	background: none;
 	color: #2196f3;
-	padding: 15px 40px;
-	font-size: 9px;
+	padding: 7px 20px;
+	font-size: 15px;
 	display: inline-block;
 }
 #compute p {
@@ -137,7 +138,7 @@ input[type="submit"]:active {
 	color: #aaa;
 }
 
-.player_list a {
+.name-label {
     background-color: #212121; /* bronze */
     /* background-origin: padding-box; */
     border:2px solid #2196f3;
@@ -152,6 +153,6 @@ input[type="submit"]:active {
     font-weight: bold;
 }
 
-.player_list a:hover {
+.name-label hover {
     background-color: #303030;
 }

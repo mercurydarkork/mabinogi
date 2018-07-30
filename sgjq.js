@@ -27,32 +27,28 @@ $.getJSON(api1, function(data){
   if (data.spring !== null) {
     for ( key in data.spring ) {
       if ( data.spring[key].name !== '' && data.spring[key].name !== undefined) {
-        $('#spring').append('<a id="'+data.spring[key].name+'1" class="'+ data.spring[key].medal +
-         '_medal" draggable="true" ondragstart="drag(event)">'+data.spring[key].name+'</a>')
+        $('#spring').append('<a id="'+data.spring[key].name+'1" class="name-label" draggable="true" ondragstart="drag(event)">'+data.spring[key].name+'</a>')
       }
     }
   }
   if (data.summer !== null) {
     for ( key in data.summer ) {
       if ( data.summer[key].name !== '' && data.summer[key].name !== undefined) {
-        $('#summer').append('<a id="'+data.summer[key].name+'1" class="'+ data.summer[key].medal + 
-        '_medal" draggable="true" ondragstart="drag(event)">'+data.spring[key].name+'</a>')
+        $('#summer').append('<a id="'+data.summer[key].name+'1" class="name-label" draggable="true" ondragstart="drag(event)">'+data.spring[key].name+'</a>')
       }
     }
   }
   if (data.autumn !== null) {
     for ( key in data.autumn ) {
       if ( data.autumn[key].name !== '' && data.autumn[key].name !== undefined) {
-        $('#autumn').append('<a id="'+data.autumn[key].name+'1" class="'+ data.autumn[key].medal + 
-        '_medal" draggable="true" ondragstart="drag(event)">'+data.autumn[key].name+'</a>')
+        $('#autumn').append('<a id="'+data.autumn[key].name+'1" class="name-label" draggable="true" ondragstart="drag(event)">'+data.autumn[key].name+'</a>')
       }
     }
   }
   if (data.winter !== null) {
     for ( key in data.winter ) {
       if ( data.autumn[key].name !== '' && data.autumn[key].name !== undefined) {
-        $('#winter').append('<a id="'+data.autumn[key].name+'1" class="'+ data.autumn[key].medal + 
-        '_medal" draggable="true" ondragstart="drag(event)">'+data.autumn[key].name+'</a>')
+        $('#winter').append('<a id="'+data.autumn[key].name+'1" class="name-label" draggable="true" ondragstart="drag(event)">'+data.autumn[key].name+'</a>')
       }
     }
   }
