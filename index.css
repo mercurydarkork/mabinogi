@@ -8,42 +8,60 @@
 
 .spring,.summer,.autumn,.winter{
 	display: inline-block;
-	width:133px;
+	width:69px;
 	height:112px;
 	padding:0.5em;
-	border:solid 2px #21a1e1;
-	flex:1;
+	border:solid 2px #2196f3;
+    flex:1;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 }
-
+/* .spring {
+    background-image: url(./img/spring.png);
+}
+.summer {
+    background-image: url(./img/summer.png);
+}
+.autumn {
+    background-image: url(./img/autumn.png);
+}
+.winter {
+    background-image: url(./img/winter.png);
+} */
 .player_list,.member_list{
 	/* width:200px;
 	height:400px; */
 	padding:0.5em;
-	border:solid 2px #21a1e1;
+	border:solid 2px #2196f3;
 	/* display:inline-block; */
+}
+
+#group {
+    display: flex;
 }
 
 body {
 	padding: 100px;
-	-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    background-color: #212121
 }
   
 input {
 	background: none;
-	color: #21a1e1;
+	color: #2196f3;
 	padding: 15px 40px;
 	font-size: 9px;
 	display: inline-block;
 }
 #compute p {
 	background: none;
-	color: #21a1e1;
+	color: #2196f3;
 	/* padding: 15px 40px; */
 	font-size: 15px;
 	display: inline-block;
 }
 #meijuanpai p{
-	color: #21a1e1;
+	color: #2196f3;
 	padding: 15px 40px;
 	font-size: 15px;
 	display: block;
@@ -52,22 +70,26 @@ input {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    box-shadow: 1px 1px 10px 5px #888888;
 }
 
 #meijuanpai td, #meijuanpai th {
-    border: 1px solid #ddd;
+    border: 1px solid #303030;
     padding: 8px;
 }
 
-#meijuanpai tr:nth-child(even){background-color: #f2f2f2;}
+#meijuanpai tr{
+    background-color: #212121;
+    color: #2196f3
+}
 
-#meijuanpai tr:hover {background-color: #ddd;}
+#meijuanpai tr:hover {background-color: #303030;}
 
 #meijuanpai th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #21a1e1;
+    background-color: #2196f3;
     color: white;
 }
 
@@ -77,12 +99,12 @@ input:focus, input:active {
 
 input[type="text"], input[type="email"] {
 	border: none;
-	border-bottom: solid 2px #21a1e1;
+	border-bottom: solid 2px #2196f3;
 }
 
 input[type="submit"]:active {
 	color: white;
-	background: #21a1e1;
+	background: #2196f3;
 }
 
 .input-group {
@@ -114,60 +136,22 @@ input[type="submit"]:active {
 	font-size: 12px;
 	color: #aaa;
 }
-  
 
-
-.paper_medal {
-    background-color: #E6E6FA; /* Green */
-    border: none;
+.player_list a {
+    background-color: #212121; /* bronze */
+    /* background-origin: padding-box; */
+    border:2px solid #2196f3;
+    /* box-shadow: 10px 10px 5px #888888; */
     color: white;
     padding: 7.5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.gold_medal {
-    background-color: #FFD700; /* Green */
-    border: none;
-    color: white;
-    padding: 7.5px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.silver_medal {
-    background-color: #C0C0C0; /* Green */
-    border: none;
-    color: white;
-    padding: 7.5px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.bronze_medal {
-    background-color: #FF8000; /* Green */
-    border: none;
-    color: white;
-    padding: 7.5px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.iron_medal {
-    background-color: #6C6C6C; /* Green */
-    border: none;
-    color: white;
-    padding: 7.5px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.player_list a:hover {
+    background-color: #303030;
 }

@@ -137,18 +137,19 @@ function saveData(){
       }
     ]
   }
-$.ajax({
-    type: "POST",
-    url: api1,
-    // The key needs to match your method's input parameter (case-sensitive).
-    data: JSON.stringify(team),
-    contentType: "application/json; charset=utf-8",
-    dataType: "json",
-    success: function(data){alert(data);},
-    failure: function(errMsg) {
-        alert(errMsg);
-    }
-});
+
+  $.ajax({
+      type: "POST",
+      url: api1,
+      // The key needs to match your method's input parameter (case-sensitive).
+      data: JSON.stringify(team),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: function(data){alert(data);},
+      failure: function(errMsg) {
+          alert(errMsg);
+      }
+  });
 
 }
 
