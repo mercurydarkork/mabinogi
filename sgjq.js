@@ -9,6 +9,11 @@ $(function() {
     $('#unit_price').text(unit_price)
     $('#triple_price').text(unit_price*3)
   });
+  $('.dropdown-content a').click( function(e){
+    var checkedContent = $(this).text()
+    $(this).parent().prev().text(checkedContent)
+  });
+
   $(".market_price_list .input-group input").focusout(function() {
     var text_val = $(this).val();
     if (text_val === "") {
@@ -18,6 +23,13 @@ $(function() {
     }
   });
 
+  $("#level").mouseover(function(){
+    if ($("#difficult").text() === "困难-中级") {
+      $(this).text("ss")
+    }else{
+      $(this).text("s")
+    }
+  });
   setInterval(function(){saveData();},5000);
 });
 var api1 = "http://localhost:3216/training_grounds/team"
@@ -147,6 +159,11 @@ function saveData(){
       }
   });
 
+}
+
+function testLevel(){
+  var score;
+  
 }
 
 
