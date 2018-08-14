@@ -1,0 +1,66 @@
+{
+    "chart": {
+       "caption": "大囧",
+      "theme": "candy",
+      "showlegend": "0",
+      "showdivlinevalues": "0",
+      "showlimits": "0",
+      "showvalues": "1",
+      "plotfillalpha": "40"
+    },
+    "categories": [
+      {
+        "category": [
+          {
+            "label": "刀"
+          },
+          {
+            "label": "锥+助攻"
+          },
+          {
+            "label": "盾"
+          },
+          {
+            "label": "拉怪"
+          },
+          {
+            "label": "混"
+          },
+          {
+            "label": "狂暴"
+          },
+          {
+            "label": "演奏"
+          }
+        ]
+      }
+    ],
+    "dataset": [
+      {
+        "seriesname": "能力值",
+        "data": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      }
+    ]
+  }
