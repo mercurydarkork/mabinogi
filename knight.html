@@ -5,6 +5,9 @@
     <link href="./knight.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/radar.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <script src="./knight.js"></script>
     <style>
     </style>
@@ -34,7 +37,7 @@
             <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"></td>
             <td>10</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Shield_of_Trust.png">（混）</td>
+            <td><img src="./img/Shield_of_Trust.png"><img src="./img/hunzi.jpg"></td>
         </tr>
         <tr>
             <td>3</td>
@@ -42,20 +45,23 @@
             <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"></td>
             <td>11</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Shield_of_Trust.png">（混）</td>
+            <td><img src="./img/Shield_of_Trust.png"><img src="./img/hunzi.jpg"></td>
         </tr>
         <tr>
             <td>4</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"></td>
+            <td>
+                <img src="./img/Pet_Antique_Mimic.png"><img src = "./img/Axe_Mastery.png">
+                <img src="./img/Smash.png"><img src="./img/Rage_Impact.png"><img src="./img/Judgment_Blade.png">
+            </td>
             <td>12</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td></td>
+            <td><img src="./img/Shield_of_Trust.png"><img src="./img/hunzi.jpg"></td>
         </tr>
         <tr>
             <td>5</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png">练刀</td>
+            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"><img src="./img/hunzi.jpg"></td>
             <td>13</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
             <td></td>
@@ -63,7 +69,7 @@
         <tr>
             <td>6</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png">练刀</td>
+            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"><img src="./img/hunzi.jpg"></td>
             <td>14</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
             <td></td>
@@ -71,7 +77,7 @@
         <tr>
             <td>7</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png">练刀</td>
+            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"><img src="./img/hunzi.jpg"></td>
             <td>15</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
             <td></td>
@@ -79,7 +85,7 @@
         <tr>
             <td>8</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png">练刀</td>
+            <td><img src="./img/Pet_Antique_Mimic.png"><img src="./img/Judgment_Blade.png"><img src="./img/hunzi.jpg"></td>
             <td>16</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
             <td></td>
@@ -114,7 +120,10 @@
             <td><img src="./img/Playing_Instrument.png">（紧跟1刀）</td>
             <td>27</td>
             <td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-            <td>拉使徒</td>
+            <td><img src="./img/Windmill.png"><img src="./img/Charging_Strike.png">
+                <img src="./img/Spinning_Uppercut.png"><img src="./img/Pet_Abyss_Dragon.png">
+                <img src="./img/Pet_Mir_the_Dragon.png"><img src="./img/Smokescreen.png">
+            </td>
         </tr>
         <tr>
             <td>20</td>
@@ -158,36 +167,41 @@
         </tr>
     </table>
     <div class="player_list" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <a id="1" class="player" draggable="true" ondragstart="drag(event)">大囧</a>
-        <a id="2" class="player" draggable="true" ondragstart="drag(event)">当当</a>
-        <a id="3" class="player" draggable="true" ondragstart="drag(event)">露西7</a>
-        <a id="4" class="player" draggable="true" ondragstart="drag(event)">麦当劳</a>
-        <a id="5" class="player" draggable="true" ondragstart="drag(event)">白兔</a>
-        <a id="6" class="player" draggable="true" ondragstart="drag(event)">剑影</a>
-        <a id="7" class="player" draggable="true" ondragstart="drag(event)">菜菜</a>
-        <a id="8" class="player" draggable="true" ondragstart="drag(event)">栗子</a>
-        <a id="9" class="player" draggable="true" ondragstart="drag(event)">孔索</a>
-        <a id="10" class="player" draggable="true" ondragstart="drag(event)">熙宝</a>
-        <a id="11" class="player" draggable="true" ondragstart="drag(event)">剑心</a>
-        <a id="12" class="player" draggable="true" ondragstart="drag(event)">撒切尔</a>
-        <a id="13" class="player" draggable="true" ondragstart="drag(event)">妙妙</a>
-        <a id="14" class="player" draggable="true" ondragstart="drag(event)">qdishi</a>
-        <a id="15" class="player" draggable="true" ondragstart="drag(event)">xxc4</a>
-        <a id="16" class="player" draggable="true" ondragstart="drag(event)">easydou</a>
-        <a id="17" class="player" draggable="true" ondragstart="drag(event)">7N</a>
-        <a id="18" class="player" draggable="true" ondragstart="drag(event)">刑天</a>
-        <a id="19" class="player" draggable="true" ondragstart="drag(event)">阿豆</a>
-        <a id="20" class="player" draggable="true" ondragstart="drag(event)">黑色</a>
-        <a id="21" class="player" draggable="true" ondragstart="drag(event)">白雪</a>
-        <a id="22" class="player" draggable="true" ondragstart="drag(event)">蝶骨</a>
-        <a id="23" class="player" draggable="true" ondragstart="drag(event)">两津</a>
-        <a id="24" class="player" draggable="true" ondragstart="drag(event)">北极星</a>
-        <a id="25" class="player" draggable="true" ondragstart="drag(event)">菩提</a>
-        <a id="26" class="player" draggable="true" ondragstart="drag(event)">DH</a>
-        <a id="27" class="player" draggable="true" ondragstart="drag(event)">恋女</a>
-        <a id="28" class="player" draggable="true" ondragstart="drag(event)">蛋总</a>
-        <a id="26" class="player" draggable="true" ondragstart="drag(event)">夜太黑</a>
-        <a id="26" class="player" draggable="true" ondragstart="drag(event)">残月</a>
+        <!-- radar:Shield|Judgment|SpikeAndSupport|PlayInstrument|Hunzi|LaGuai|SmashAndRect -->
+        <a id="1" class="player" draggable="true" ondragstart="drag(event)" radar="5515555">大囧</a>
+        <a id="2" class="player" draggable="true" ondragstart="drag(event)" radar="5251511">当当</a>
+        <a id="3" class="player" draggable="true" ondragstart="drag(event)" radar="1111111">露西7</a>
+        <a id="4" class="player" draggable="true" ondragstart="drag(event)" radar="5411531">麦当劳</a>
+        <a id="5" class="player" draggable="true" ondragstart="drag(event)" radar="5151513">白兔</a>
+        <a id="6" class="player" draggable="true" ondragstart="drag(event)" radar="5323541">剑影</a>
+        <a id="7" class="player" draggable="true" ondragstart="drag(event)" radar="5515511">菜菜</a>
+        <a id="8" class="player" draggable="true" ondragstart="drag(event)" radar="5115511">栗子</a>
+        <a id="9" class="player" draggable="true" ondragstart="drag(event)" radar="5123511">孔索</a>
+        <a id="10" class="player" draggable="true" ondragstart="drag(event)" radar="5411511">熙宝</a>
+        <a id="11" class="player" draggable="true" ondragstart="drag(event)" radar="5411511">剑心</a>
+        <a id="12" class="player" draggable="true" ondragstart="drag(event)" radar="3111411">撒切尔</a>
+        <a id="13" class="player" draggable="true" ondragstart="drag(event)" radar="5415511">古兰修</a>
+        <a id="14" class="player" draggable="true" ondragstart="drag(event)" radar="5111511">qdishi</a>
+        <a id="15" class="player" draggable="true" ondragstart="drag(event)" radar="5411511">xxc4</a>
+        <a id="16" class="player" draggable="true" ondragstart="drag(event)" radar="5141511">easydou</a>
+        <a id="17" class="player" draggable="true" ondragstart="drag(event)" radar="5141511">7N</a>
+        <a id="18" class="player" draggable="true" ondragstart="drag(event)" radar="5315555">刑天</a>
+        <a id="19" class="player" draggable="true" ondragstart="drag(event)" radar="5311511">阿豆</a>
+        <a id="20" class="player" draggable="true" ondragstart="drag(event)" radar="5114511">黑色</a>
+        <a id="21" class="player" draggable="true" ondragstart="drag(event)" radar="5111511">白雪</a>
+        <a id="22" class="player" draggable="true" ondragstart="drag(event)" radar="5141511">蝶骨</a>
+        <a id="23" class="player" draggable="true" ondragstart="drag(event)" radar="5111511">两津</a>
+        <a id="24" class="player" draggable="true" ondragstart="drag(event)" radar="5311511">北极星</a>
+        <a id="25" class="player" draggable="true" ondragstart="drag(event)" radar="5311511">菩提</a>
+        <a id="26" class="player" draggable="true" ondragstart="drag(event)" radar="5441554">DH</a>
+        <a id="27" class="player" draggable="true" ondragstart="drag(event)" radar="5111511">恋女</a>
+        <a id="28" class="player" draggable="true" ondragstart="drag(event)" radar="5111551">蛋总</a>
+        <a id="29" class="player" draggable="true" ondragstart="drag(event)" radar="5211511">夜太黑</a>
+        <a id="30" class="player" draggable="true" ondragstart="drag(event)" radar="3111411">残月</a>
+        <a id="31" class="player" draggable="true" ondragstart="drag(event)" radar="3111411">得到与失去</a>
+        <a id="32" class="player" draggable="true" ondragstart="drag(event)" radar="5111511">雨生初夏</a>
+        <a id="33" class="player" draggable="true" ondragstart="drag(event)" radar="5111411">东教授</a>
     </div>
+    <div id="chartdiv"></div> 
 </body>
 </html>

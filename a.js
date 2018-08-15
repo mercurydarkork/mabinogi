@@ -1,3 +1,4 @@
+
 var chart = AmCharts.makeChart("chartdiv", {
     type: "radar",
     theme: "light",
@@ -5,43 +6,43 @@ var chart = AmCharts.makeChart("chartdiv", {
     dataProvider: [
       {
         skill: "Shield",
-        level: 1,
+        level: Number(1),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/Shield_of_Trust.png"
       },
       {
         skill: "Judgment",
-        level: 2,
+        level: Number(2),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/Judgment_Blade.png"
       },
       {
         skill: "SpikeAndSupport",
-        level: 3,
+        level: Number(3),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/SpikeAndSupport_Shot.png"
       },
       {
         skill: "PlayInstrument",
-        level: 4,
+        level: Number(4),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/Playing_Instrument.png"
       },
       {
         skill: "Hunzi",
-        level: 5,
+        level: Number(5),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/hunzi.jpg"
       },
       {
         skill: "LaGuai",
-        level: 5,
+        level: Number(5),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/compose_laguai.png"
       },
       {
         skill: "SmashAndRect",
-        level: 5,
+        level: Number(5),
         image:
           "http://128.1.224.111/down/%E6%B4%9B%E5%A5%87/alban_knights/img/smashAndRect.png" 
       }
